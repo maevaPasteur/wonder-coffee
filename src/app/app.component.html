@@ -23,7 +23,10 @@
     ></app-intensity>
 </section>
 <section *ngIf="step === 4">
-    <app-size></app-size>
+    <app-size
+            [inputData]="myCoffee"
+            (sendBackData)="editMyObject($event)"
+    ></app-size>
 </section>
 <section *ngIf="step === 5">
     <app-ingredients></app-ingredients>

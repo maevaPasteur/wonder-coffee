@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {DataService} from '../../../services/data.service';
 
 @Component({
   selector: 'app-size',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SizeComponent implements OnInit {
 
-  constructor() { }
+    sizes: any;
 
-  ngOnInit() {
-  }
+    @Input() inputData: any;
+    @Output() sendBackData = new EventEmitter();
+
+    constructor(private data: DataService) {
+    }
+
+    ngOnInit() {
+        this.data.getSizes().subscribe(data => {
+                this.sizes = data;
+                console.log(this.sizes);
+            }
+        );
+    }
 
 }

@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
     public myCoffee = {
         product_category: undefined,
         product_item: undefined,
+        product_stock: undefined,
         intensity: undefined,
         size: undefined,
         ingredient: [],
