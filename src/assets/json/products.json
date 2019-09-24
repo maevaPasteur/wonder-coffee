@@ -24,7 +24,7 @@
           {
             "id": "product3",
             "label": "Thé au citron",
-            "stock" : 1
+            "stock" : 0
           },
           {
             "id": "product4",

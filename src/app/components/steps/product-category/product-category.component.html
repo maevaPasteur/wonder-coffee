@@ -1,11 +1,12 @@
 <h2>Choisis la catégorie</h2>
-<div *ngFor="let item of category"
-     (click)="sendBackData.emit(
+<div *ngFor="let item of category">
+    <div (click)="sendBackData.emit(
      {
          'data':{
             'product_category':item.name
          },
          'step' : 2
      })">
-    <p>{{ item.name }}</p>
+        <p>{{ item.name }}</p>
+    </div>
 </div>
