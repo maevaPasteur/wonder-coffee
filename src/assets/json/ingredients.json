@@ -1,0 +1,106 @@
+[
+  {
+    "label": "glace",
+    "ingredients": [
+      {
+        "id": "ingredient1",
+        "label": "glace pillée",
+        "stock": 6,
+        "price": 0.2,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient2",
+        "label": "glaçons",
+        "stock": 5,
+        "price": 0.2,
+        "quantity_adjust": true
+      }
+    ]
+  },
+  {
+    "label": "lait",
+    "ingredients": [
+      {
+        "id": "ingredient3",
+        "label": "Lait de vache",
+        "stock": 8,
+        "price": 0.2,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient4",
+        "label": "Lait d'amandes",
+        "stock": 2,
+        "price": 0.2,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient5",
+        "label": "Lait de soja",
+        "stock": 2,
+        "price": 0.2,
+        "quantity_adjust": true
+      }
+    ]
+  },
+  {
+    "label": "arrôme",
+    "ingredients": [
+      {
+        "id": "ingredient6",
+        "label": "Canelle",
+        "stock": 8,
+        "price": 0.1,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient7",
+        "label": "Vanille",
+        "stock": 2,
+        "price": 0.1,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient8",
+        "label": "Nutella",
+        "stock": 2,
+        "price": 0.2,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient8",
+        "label": "Coulis de caramel",
+        "stock": 6,
+        "price": 0.2,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient8",
+        "label": "Chocolat fondu",
+        "stock": 6,
+        "price": 0.2,
+        "quantity_adjust": true
+      }
+    ]
+  },
+  {
+    "label": "alcool",
+    "ingredients": [
+      {
+        "id": "ingredient9",
+        "label": "Whisky",
+        "stock": 8,
+        "price": 0.2,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient7",
+        "label": "Grand Marnier",
+        "stock": 2,
+        "price": 0.2,
+        "quantity_adjust": true
+      }
+    ]
+  }
+]

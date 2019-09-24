@@ -1,0 +1,54 @@
+[
+  {
+    "label": "Nappage",
+    "toppings" : [
+      {
+        "id": "topping1",
+        "label": "Mousse de lait",
+        "price": 0.1,
+        "stock": 8,
+        "quantity_adjust": false
+      },
+      {
+        "id": "topping2",
+        "label": "Chantilly",
+        "price": 0.1,
+        "stock": 8,
+        "quantity_adjust": false
+      }
+    ]
+  },
+  {
+    "label": "Garniture",
+    "toppings" : [
+      {
+        "id": "topping3",
+        "label": "Pépittes de chocolat",
+        "price": 0.1,
+        "stock": 8,
+        "quantity_adjust": false
+      },
+      {
+        "id": "topping4",
+        "label": "Vermicelles acr en ciel",
+        "price": 0.1,
+        "stock": 8,
+        "quantity_adjust": false
+      },
+      {
+        "id": "topping5",
+        "label": "Coco rappée",
+        "price": 0.1,
+        "stock": 8,
+        "quantity_adjust": false
+      },
+      {
+        "id": "topping6",
+        "label": "Merringues",
+        "price": 0.1,
+        "stock": 8,
+        "quantity_adjust": false
+      }
+    ]
+  }
+]

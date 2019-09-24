@@ -1,0 +1,17 @@
+[
+  {
+    "id": "intensity1",
+    "label": "Serré",
+    "intensity": 1
+  },
+  {
+    "id": "intensity2",
+    "label": "Normal",
+    "intensity": 2
+  },
+  {
+    "id": "intensity3",
+    "label": "Allongé",
+    "intensity": 3
+  }
+]

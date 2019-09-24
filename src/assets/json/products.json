@@ -1,0 +1,54 @@
+[
+  {
+    "category": [
+      {
+        "id" : "category1",
+        "name" : "Café",
+        "products" : [
+          {
+            "id": "product1",
+            "label": "Café pur Arabica",
+            "stock": 2
+          },
+          {
+            "id": "product2",
+            "label": "Café Robusta, notes gourmandes de noix et d'amandes",
+            "stock" : 4
+          }
+        ]
+      },
+      {
+        "id" : "category2",
+        "name" : "Thé",
+        "products" : [
+          {
+            "id": "product3",
+            "label": "Thé au citron",
+            "stock" : 1
+          },
+          {
+            "id": "product4",
+            "label": "Thé nature BIO",
+            "stock" : 8
+          }
+        ]
+      },
+      {
+        "id" : "category3",
+        "name" : "Chocolat Chaud",
+        "products" : [
+          {
+            "id": "product5",
+            "label": "Chaucolat chaud Milka",
+            "stock" : 7
+          },
+          {
+            "id": "product6",
+            "label": "Chaucolat chaud Nestlé",
+            "stock" : 0
+          }
+        ]
+      }
+    ]
+  }
+]

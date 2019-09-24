@@ -1,0 +1,17 @@
+[
+  {
+    "id": "size1",
+    "label": "Petit",
+    "content": 1
+  },
+  {
+    "id": "size2",
+    "label": "Moyen",
+    "content": 2
+  },
+  {
+    "id": "size3",
+    "label": "Grand",
+    "content": 3
+  }
+]
