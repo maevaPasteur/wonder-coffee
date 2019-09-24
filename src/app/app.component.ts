@@ -8,12 +8,12 @@ import {Component, OnInit} from '@angular/core';
 export class AppComponent implements OnInit {
 
     title = 'wonder-coffee';
-    step = 1;
+    public step = 1;
 
     constructor() { }
 
     public myCoffee = {
-        product_categoty: undefined,
+        product_category: undefined,
         product_item: undefined,
         intensity: undefined,
         size: undefined,
@@ -25,9 +25,13 @@ export class AppComponent implements OnInit {
     message: string;
 
     public editMyObject = (event) => {
-        this.message = event;
-        console.log('edit my object');
-        console.log(this.message);
+        this.myCoffee.product_category = event.data.product_category;
+        console.log('edit my object coffee');
+        console.log(this.myCoffee);
+        if (this.step) {
+            this.step = event.step;
+            console.log('step', this.step);
+        }
     }
 
     ngOnInit() {

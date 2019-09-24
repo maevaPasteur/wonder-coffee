@@ -1,6 +1,5 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {DataService} from '../../../services/data.service';
-import {NavigationService} from '../../../services/navigation.service';
 
 @Component({
     selector: 'app-product-category',
@@ -13,7 +12,7 @@ export class ProductCategoryComponent implements OnInit {
 
     @Output() sendBackData = new EventEmitter();
 
-    constructor(private data: DataService, private navigation: NavigationService) {
+    constructor(private data: DataService) {
     }
 
     ngOnInit() {
@@ -22,9 +21,5 @@ export class ProductCategoryComponent implements OnInit {
                 console.log(this.category);
             }
         );
-    }
-
-    navTo(e) {
-        this.navigation.gotToStep(e);
     }
 }

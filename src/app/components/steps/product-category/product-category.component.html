@@ -1,7 +1,16 @@
 <p>
-  product-category works!
+    product-category works!
 </p>
 <div *ngFor="let item of category">
-  <p (click)="sendBackData.emit('new message')">Click</p>
-  <p (click)="navTo(2)">{{ item.name }}</p>
+    <p>{{ item.name }}</p>
 </div>
+<button (click)="sendBackData.emit(
+    {
+      'step': 2,
+      'data' :
+          {
+            'product_category': 'coffee'
+          }
+
+    }
+    )">Valider</button>
