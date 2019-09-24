@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
         product_category: undefined,
         product_item: undefined,
         product_stock: undefined,
+        product_price: undefined,
         intensity: undefined,
         size: undefined,
         ingredient: [],
@@ -28,10 +29,14 @@ export class AppComponent implements OnInit {
         // this.myCoffee.product_category = event.data.product_category;
         if (event.data) {
             for (const key of Object.keys(event.data)) {
-                if (this.myCoffee[key] && Array.isArray(this.myCoffee[key])) {
-                    this.myCoffee[key].push(event.data[key]);
+                if (key === 'price') {
+                    this.myCoffee.price += event.data.price;
                 } else {
-                    this.myCoffee[key] = event.data[key];
+                    if (this.myCoffee[key] && Array.isArray(this.myCoffee[key])) {
+                        this.myCoffee[key].push(event.data[key]);
+                    } else {
+                        this.myCoffee[key] = event.data[key];
+                    }
                 }
                 console.log(this.myCoffee);
             }

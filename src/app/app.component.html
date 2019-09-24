@@ -29,7 +29,10 @@
     ></app-size>
 </section>
 <section *ngIf="step === 5">
-    <app-ingredients></app-ingredients>
+    <app-ingredients
+            [inputData]="myCoffee"
+            (sendBackData)="editMyObject($event)"
+    ></app-ingredients>
 </section>
 <section *ngIf="step === 6">
     <app-toppings></app-toppings>

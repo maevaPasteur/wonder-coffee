@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {DataService} from '../../../services/data.service';
 
 @Component({
   selector: 'app-ingredients',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IngredientsComponent implements OnInit {
 
-  constructor() { }
+    category: any;
+    ingredients = [];
 
-  ngOnInit() {
-  }
+    @Input() inputData: any;
+    @Output() sendBackData = new EventEmitter();
+
+    constructor(private data: DataService) {
+    }
+
+    ngOnInit() {
+        this.data.getIngredients().subscribe(data => {
+                this.category = data;
+                console.log(this.category);
+            }
+        );
+    }
+
+    swithIngredient(item) {
+        console.log(item);
+    }
+
 
 }

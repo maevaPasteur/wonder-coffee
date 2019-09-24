@@ -1,6 +1,7 @@
 <h2>Choisis la taille</h2>
 <div *ngFor="let item of sizes">
-  <div *ngIf="inputData.product_stock >= item.content" (click)="sendBackData.emit({'data':{'size':item.content},'step':5})">
+  <div *ngIf="inputData.product_stock >= item.content"
+       (click)="sendBackData.emit({'data':{'size':item.content, 'price':(item.content * inputData.product_price)},'step':5})">
     <p>{{ item.label }}</p>
   </div>
   <div *ngIf="inputData.product_stock < item.content" style="opacity:.5">

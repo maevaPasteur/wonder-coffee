@@ -1,3 +1,11 @@
-<p>
-  ingredients works!
-</p>
+<h2>Chosis tes ingrédients</h2>
+<form>
+  <div *ngFor="let item of category">
+    <h3>{{ item.label }}</h3>
+    <ul>
+      <li *ngFor="let ingredient of item.ingredients" (click)="swithIngredient(ingredient)">
+        {{ ingredient.label }}
+      </li>
+    </ul>
+  </div>
+</form>

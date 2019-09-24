@@ -1,11 +1,11 @@
 <h2>Choisis ton produit</h2>
 <div *ngFor="let item of product">
     <div *ngIf="inputData.product_category === 'Café' && item.stock > 0"
-         (click)="sendBackData.emit({'data':{'product_item':item.label, 'product_stock':item.stock},'step':3})">
+         (click)="sendBackData.emit({'data':{'product_item':item.label, 'product_stock':item.stock, 'product_price':item.price},'step':3})">
         <p>{{ item.label }}</p>
     </div>
     <div *ngIf="inputData.product_category != 'Café' && item.stock > 0"
-         (click)="sendBackData.emit({'data':{'product_item':item.label, 'product_stock':item.stock},'step':4})">
+         (click)="sendBackData.emit({'data':{'product_item':item.label, 'product_stock':item.stock, 'product_price':item.price},'step':4})">
         <p>{{ item.label }}</p>
     </div>
     <div *ngIf="item.stock === 0" style="opacity:.5">
