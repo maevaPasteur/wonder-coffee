@@ -1,4 +1,4 @@
-import {Component, OnInit, Output, EventEmitter} from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {DataService} from '../../../services/data.service';
 
 @Component({
@@ -10,6 +10,7 @@ export class ProductCategoryComponent implements OnInit {
 
     category: any;
 
+    @Input() inputData: any;
     @Output() sendBackData = new EventEmitter();
 
     constructor(private data: DataService) {
@@ -18,7 +19,6 @@ export class ProductCategoryComponent implements OnInit {
     ngOnInit() {
         this.data.getCategory().subscribe(data => {
                 this.category = data[0].category;
-                console.log(this.category);
             }
         );
     }

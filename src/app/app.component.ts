@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {forEach} from '@angular/router/src/utils/collection';
 
 @Component({
     selector: 'app-root',
@@ -22,20 +23,32 @@ export class AppComponent implements OnInit {
         price: 0
     };
 
-    message: string;
-
     public editMyObject = (event) => {
-        this.myCoffee.product_category = event.data.product_category;
-        console.log('edit my object coffee');
-        console.log(this.myCoffee);
-        if (this.step) {
+        // this.myCoffee.product_category = event.data.product_category;
+        if (event.data) {
+            for (const key of Object.keys(event.data)) {
+                if (this.myCoffee[key] && Array.isArray(this.myCoffee[key])) {
+                    this.myCoffee[key].push(event.data[key]);
+                } else {
+                    this.myCoffee[key] = event.data[key];
+                }
+                console.log(this.myCoffee);
+            }
+        }
+        if (event.step) {
             this.step = event.step;
-            console.log('step', this.step);
         }
     }
 
     ngOnInit() {
-        console.log('init');
+        // console.log('init');
+        // console.log(this.myCoffee);
+        // for (let [key, value] of Object.entries(this.myCoffee)) {
+        //     console.log(value);
+        //     //console.log(value.isArray());
+        // }
+        // console.log('ooo');
+        // console.log(this.myCoffee['price']);
     }
 
 }

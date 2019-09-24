@@ -1,15 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-header></app-header>
+<h1>App</h1>
 <section *ngIf="step === 0">
     <app-home></app-home>
 </section>
 <section *ngIf="step === 1">
     <app-product-category
+            [inputData]="myCoffee"
             (sendBackData)="editMyObject($event)"
     ></app-product-category>
 </section>
 <section *ngIf="step === 2">
-    <app-product-item></app-product-item>
+    <app-product-item
+            [inputData]="myCoffee"
+            (sendBackData)="editMyObject($event)"
+    ></app-product-item>
 </section>
 <section *ngIf="step === 3">
     <app-intensity></app-intensity>
