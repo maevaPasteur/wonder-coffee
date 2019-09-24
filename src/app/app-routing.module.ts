@@ -3,12 +3,12 @@ import {Routes, RouterModule} from '@angular/router';
 
 import {HomeComponent} from './components/global/home/home.component';
 import {SizeComponent} from './components/steps/size/size.component';
-import { ProductCategoryComponent } from './product-category/product-category.component';
-import { ProductItemComponent } from './product-item/product-item.component';
-import { IntensityComponent } from './intensity/intensity.component';
-import { IngredientsComponent } from './ingredients/ingredients.component';
-import { ToppingsComponent } from './toppings/toppings.component';
-import { OrderComponent } from './order/order.component';
+import { ProductCategoryComponent } from './components/steps/product-category/product-category.component';
+import { ProductItemComponent } from './components/steps/product-item/product-item.component';
+import { IntensityComponent } from './components/steps/intensity/intensity.component';
+import { IngredientsComponent } from './components/steps/ingredients/ingredients.component';
+import { ToppingsComponent } from './components/steps/toppings/toppings.component';
+import { OrderComponent } from './components/steps/order/order.component';
 
 
 const routes: Routes = [
