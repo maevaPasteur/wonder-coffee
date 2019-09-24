@@ -1,3 +1,7 @@
 <p>
   product-category works!
 </p>
+<div *ngFor="let item of category">
+  <p (click)="sendBackData.emit('new message')">Click</p>
+  <p (click)="navTo(2)">{{ item.name }}</p>
+</div>

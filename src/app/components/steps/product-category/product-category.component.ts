@@ -1,22 +1,30 @@
-import { Component, OnInit } from '@angular/core';
-import {DataService} from 'src/app/services/data/data.service';
+import {Component, OnInit, Output, EventEmitter} from '@angular/core';
+import {DataService} from '../../../services/data.service';
+import {NavigationService} from '../../../services/navigation.service';
 
 @Component({
-  selector: 'app-product-category',
-  templateUrl: './product-category.component.html',
-  styleUrls: ['./product-category.component.sass']
+    selector: 'app-product-category',
+    templateUrl: './product-category.component.html',
+    styleUrls: ['./product-category.component.sass']
 })
 export class ProductCategoryComponent implements OnInit {
 
-  category: any;
+    category: any;
 
-    constructor(private data: DataService) {}
+    @Output() sendBackData = new EventEmitter();
 
-  ngOnInit() {
-    this.data.getCategory().subscribe(data => {
-        this.category = data;
-        console.log(this.category)
-    });
-  }
+    constructor(private data: DataService, private navigation: NavigationService) {
+    }
 
+    ngOnInit() {
+        this.data.getCategory().subscribe(data => {
+                this.category = data[0].category;
+                console.log(this.category);
+            }
+        );
+    }
+
+    navTo(e) {
+        this.navigation.gotToStep(e);
+    }
 }

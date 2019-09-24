@@ -1,3 +1,28 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-header></app-header>
-<router-outlet #o="outlet"></router-outlet>
+<section *ngIf="step === 0">
+    <app-home></app-home>
+</section>
+<section *ngIf="step === 1">
+    <app-product-category
+            (sendBackData)="editMyObject($event)"
+    ></app-product-category>
+</section>
+<section *ngIf="step === 2">
+    <app-product-item></app-product-item>
+</section>
+<section *ngIf="step === 3">
+    <app-intensity></app-intensity>
+</section>
+<section *ngIf="step === 4">
+    <app-size></app-size>
+</section>
+<section *ngIf="step === 5">
+    <app-ingredients></app-ingredients>
+</section>
+<section *ngIf="step === 6">
+    <app-toppings></app-toppings>
+</section>
+<section *ngIf="step === 7">
+    <app-order></app-order>
+</section>
