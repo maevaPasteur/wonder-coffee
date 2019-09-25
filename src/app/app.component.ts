@@ -25,8 +25,11 @@ export class AppComponent implements OnInit {
         price: 0
     };
 
+    /**
+     * Update myCoffe object from childs component
+     * @param event
+     */
     public editMyObject = (event) => {
-        // this.myCoffee.product_category = event.data.product_category;
         if (event.data) {
             for (const key of Object.keys(event.data)) {
                 if (key === 'price') {
@@ -50,6 +53,12 @@ export class AppComponent implements OnInit {
         }
     }
 
+    /**
+     * Remove from an array
+     * @param arr : arrayx
+     * @param a : value to remove
+     * @return {any}
+     */
     removeA(arr) {
         let what;
         let a = arguments;
