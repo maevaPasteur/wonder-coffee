@@ -91,14 +91,14 @@
         "id": "ingredient9",
         "label": "Whisky",
         "stock": 8,
-        "price": 0.2,
+        "price": 0.5,
         "quantity_adjust": true
       },
       {
         "id": "ingredient7",
         "label": "Grand Marnier",
         "stock": 2,
-        "price": 0.2,
+        "price": 0.5,
         "quantity_adjust": true
       }
     ]
