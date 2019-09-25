@@ -43,7 +43,12 @@ export class AppComponent implements OnInit {
                         if (!activeItem) {
                             activeItem = this.ingredients.find(c => c.label === event.data[key]);
                         }
-                        const itemPrice = activeItem.price * this.myCoffee.size;
+                        let itemPrice;
+                        if (activeItem.quantity_adjust === true) {
+                            itemPrice = activeItem.price * this.myCoffee.size;
+                        } else {
+                            itemPrice = activeItem.price;
+                        }
                         if (this.myCoffee[key].includes(event.data[key])) {
                             this.myCoffee[key] = this.removeFromArray(this.myCoffee[key], event.data[key]);
                             this.myCoffee.price -= itemPrice;
