@@ -1,4 +1,5 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {DataService} from '../../../services/data.service';
 
 @Component({
     selector: 'app-order',
@@ -7,12 +8,19 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 })
 export class OrderComponent implements OnInit {
 
+    options: any;
+
     @Input() inputData: any;
     @Output() sendBackData = new EventEmitter();
 
-    constructor() {}
+    constructor(private data: DataService) {
+    }
 
     ngOnInit() {
+        this.data.getOptions().subscribe(data => {
+                this.options = data;
+            }
+        );
     }
 
 }
