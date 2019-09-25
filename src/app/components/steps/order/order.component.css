@@ -67,4 +67,14 @@ input:checked + label {
   background-color: #37627c;
   color: #fafafa;
 }
+
+span {
+  font-weight: 600;
+  color: #37627c;
+}
+
+li {
+  list-style: none;
+  line-height: 1.4em;
+}
 /*# sourceMappingURL=order.component.css.map */

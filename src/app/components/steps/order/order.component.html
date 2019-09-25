@@ -17,11 +17,11 @@
 <h2>Votre sélection</h2>
 <div class="flex">
   <div class="container-category ">
-        <p>Categorie : {{ inputData.product_category }}</p>
-        <p>Produit : {{ inputData.product_item }}</p>
-        <p>Taille : {{ inputData.size }}</p>
+        <p> <span> Categorie : </span>{{ inputData.product_category }}</p>
+        <p><span>Produit : </span>{{ inputData.product_item }}</p>
+        <p><span>Taille : </span>{{ inputData.size }}</p>
         <div *ngIf="inputData.ingredient !== []">
-          <p>Ingrédients</p>
+          <p><span>Ingrédients</span></p>
           <ul>
             <li *ngFor="let ingredient of inputData.ingredient">
               {{ ingredient }}
@@ -29,7 +29,7 @@
           </ul>
         </div>
         <div *ngIf="inputData.topping !== []">
-          <p>Nappages</p>
+          <p><span>Nappages</span></p>
           <ul>
             <li *ngFor="let topping of inputData.topping">
               {{ topping }}
