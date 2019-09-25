@@ -8,16 +8,30 @@
         "products" : [
           {
             "id": "product1",
-            "label": "Café pur Arabica",
-            "description": "Café noir au gout intense",
-            "price": 1,
-            "stock": 2
+            "label": "Bourbon",
+            "description": "Pas disponible pour le moment",
+            "price": 1.30,
+            "stock": 0
           },
           {
             "id": "product2",
-            "label": "Café Robusta",
-            "description": "notes gourmandes de noix et d'amandes",
-            "price": 1.2,
+            "label": "Luwak",
+            "description": "Fleuri et délicat",
+            "price": 1.20,
+            "stock" : 4
+          },
+          {
+            "id": "product3",
+            "label": "Moka",
+            "description": "Tanné et sauvage",
+            "price": 1.50,
+            "stock" : 4
+          },
+          {
+            "id": "product4",
+            "label": "Java",
+            "description": "Léger et sucré",
+            "price": 1.10,
             "stock" : 4
           }
         ]
@@ -27,34 +41,34 @@
         "name" : "Thé",
         "products" : [
           {
-            "id": "product3",
+            "id": "product5",
             "label": "Thé au citron",
             "description": "",
-            "price": 0.8,
+            "price": 1.30,
             "stock" : 0
           },
           {
-            "id": "product4",
+            "id": "product6",
             "label": "Thé nature BIO",
             "description": "",
-            "price": 0.5,
+            "price": 1.60,
             "stock" : 8
           }
         ]
       },
       {
         "id" : "category3",
-        "name" : "Chocolat Chaud",
+        "name" : "Chocolat",
         "products" : [
           {
-            "id": "product5",
+            "id": "product7",
             "label": "Chaucolat chaud Milka",
             "description": "",
-            "price": 1.2,
+            "price": 1.20,
             "stock" : 7
           },
           {
-            "id": "product6",
+            "id": "product8",
             "label": "Chaucolat chaud Nestlé",
             "description": "",
             "price": 1,
