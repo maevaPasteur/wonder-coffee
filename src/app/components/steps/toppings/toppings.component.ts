@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {DataService} from '../../../services/data.service';
 
 @Component({
   selector: 'app-toppings',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToppingsComponent implements OnInit {
 
-  constructor() { }
+    category: any;
 
-  ngOnInit() {
-  }
+    @Input() inputData: any;
+    @Output() sendBackData = new EventEmitter();
+
+    constructor(private data: DataService) {
+    }
+
+    ngOnInit() {
+        this.data.getToppings().subscribe(data => {
+                this.category = data;
+                console.log(this.category);
+            }
+        );
+    }
 
 }

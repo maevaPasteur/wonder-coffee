@@ -35,7 +35,10 @@
     ></app-ingredients>
 </section>
 <section *ngIf="step === 6">
-    <app-toppings></app-toppings>
+    <app-toppings
+            [inputData]="myCoffee"
+            (sendBackData)="editMyObject($event)"
+    ></app-toppings>
 </section>
 <section *ngIf="step === 7">
     <app-order></app-order>

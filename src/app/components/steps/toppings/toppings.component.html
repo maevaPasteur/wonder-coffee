@@ -1,3 +1,14 @@
-<p>
-  toppings works!
-</p>
+<h2>Chosis les nappages</h2>
+<form>
+  <div *ngFor="let item of category">
+    <h3>{{ item.label }}</h3>
+    <ul>
+      <li *ngFor="let topping of item.toppings">
+        <input id="{{ topping.id }}" type="checkbox" value="{{ topping.label }}"
+               (click)="sendBackData.emit({'data':{'topping': topping.label}})">
+        <label for="{{ topping.id }}">{{ topping.label }}</label>
+      </li>
+    </ul>
+  </div>
+</form>
+<button (click)="sendBackData.emit({'step': 7})">Valider</button>
