@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-return',
   templateUrl: './return.component.html',
-  styleUrls: ['./return.component.sass']
+  styleUrls: ['./return.component.scss']
 })
 export class ReturnComponent implements OnInit {
 

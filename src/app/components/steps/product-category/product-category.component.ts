@@ -4,7 +4,7 @@ import {DataService} from '../../../services/data.service';
 @Component({
     selector: 'app-product-category',
     templateUrl: './product-category.component.html',
-    styleUrls: ['./product-category.component.sass']
+    styleUrls: ['./product-category.component.scss']
 })
 export class ProductCategoryComponent implements OnInit {
 

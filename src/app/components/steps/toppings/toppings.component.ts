@@ -4,7 +4,7 @@ import {DataService} from '../../../services/data.service';
 @Component({
   selector: 'app-toppings',
   templateUrl: './toppings.component.html',
-  styleUrls: ['./toppings.component.sass']
+  styleUrls: ['./toppings.component.scss']
 })
 export class ToppingsComponent implements OnInit {
 

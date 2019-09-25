@@ -4,7 +4,7 @@ import {DataService} from '../../../services/data.service';
 @Component({
     selector: 'app-intensity',
     templateUrl: './intensity.component.html',
-    styleUrls: ['./intensity.component.sass']
+    styleUrls: ['./intensity.component.scss']
 })
 export class IntensityComponent implements OnInit {
 
