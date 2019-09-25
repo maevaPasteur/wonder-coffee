@@ -7,7 +7,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 
-import {HeaderComponent} from './components/global/header/header.component';
 import {HomeComponent} from './components/global/home/home.component';
 import {SizeComponent} from './components/steps/size/size.component';
 import {ProductCategoryComponent} from './components/steps/product-category/product-category.component';
@@ -16,13 +15,10 @@ import {IntensityComponent} from './components/steps/intensity/intensity.compone
 import {IngredientsComponent} from './components/steps/ingredients/ingredients.component';
 import {ToppingsComponent} from './components/steps/toppings/toppings.component';
 import {OrderComponent} from './components/steps/order/order.component';
-import { ReturnComponent } from './components/global/return/return.component';
-import { HomeBtnComponent } from './components/global/home-btn/home-btn.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        HeaderComponent,
         HomeComponent,
         SizeComponent,
         ProductCategoryComponent,
@@ -30,9 +26,7 @@ import { HomeBtnComponent } from './components/global/home-btn/home-btn.componen
         IntensityComponent,
         IngredientsComponent,
         ToppingsComponent,
-        OrderComponent,
-        ReturnComponent,
-        HomeBtnComponent
+        OrderComponent
     ],
     imports: [
         BrowserModule,

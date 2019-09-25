@@ -26,7 +26,8 @@ export class AppComponent implements OnInit {
         ingredient: [],
         topping: [],
         price: 0,
-        sugar: undefined
+        sugar: undefined,
+        stick: undefined
     };
 
     /**
@@ -61,9 +62,14 @@ export class AppComponent implements OnInit {
                         this.myCoffee[key] = event.data[key];
                     }
                 }
-                console.log(this.myCoffee);
             }
         }
+        if (event.removed) {
+            for (let [key, value] of Object.entries(event.removed)) {
+                this.myCoffee[key] = value;
+            }
+        }
+        console.log(this.myCoffee);
         if (event.step) {
             this.step = event.step;
         }

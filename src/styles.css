@@ -62,6 +62,10 @@ h3 {
   background-color: #fafafa;
 }
 
+.container-category img {
+  height: 180px;
+}
+
 /* button */
 /* return btn */
 .btn-border-blue {
@@ -87,6 +91,4 @@ h3 {
   background-color: #37627c;
   color: #fff;
 }
-
-/* home btn */
 /*# sourceMappingURL=styles.css.map */

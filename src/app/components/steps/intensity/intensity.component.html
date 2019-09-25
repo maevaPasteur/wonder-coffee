@@ -1,11 +1,24 @@
-<h2>Choisis l'intencité</h2>
-<div class="flex">
-    <div *ngFor="let item of intensity">
-        <div (click)="sendBackData.emit({'data':{'intensity':item.intensity},'step':4})"
-        class="container-category">
-          <img src="{{ item.img }}">
-        </div>
-        <h3>{{ item.label }}</h3>
-      </div>
+<h2>Choisissez l'intencité de votre café</h2>
+<p (click)="sendBackData.emit(
+  {
+            'step': 1,
+            'removed': {
+                'product_category': undefined,
+                'product_item': undefined,
+                'product_stock': undefined,
+                'product_price': undefined,
+                'intensity': undefined,
+                'size': undefined,
+                'ingredient': [],
+                'topping': [],
+                'price': undefined
+            }
+        }
+)" class="btn-border-blue restart">Recommencer</p>
+<h2>Choisissez l'intencité de votre café</h2>
+<div *ngFor="let item of intensity">
+  <div (click)="sendBackData.emit({'data':{'intensity':item.intensity},'step':4})">
+    <p>{{ item.label }}</p>
+  </div>
 </div>
 <!--<button (click)="sendBackData.emit({'step': 3})">Valider</button>-->
