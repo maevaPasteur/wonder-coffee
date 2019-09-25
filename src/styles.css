@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 /* Typo */
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 /* General settings */
 body {
   font-family: 'Montserrat', serif;
-  background-image: url('../src/assets/img/bcg.png');
+  background-image: url("../src/assets/img/bcg.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -18,13 +17,18 @@ body {
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* Heading */
-
 h2 {
   font-family: Montserrat, serif;
   font-size: 46px;
@@ -53,7 +57,8 @@ h3 {
   width: 231px;
   height: 325px;
   border-radius: 23px;
-  box-shadow: 0 10px 25px 0 #e0e0e0;
+  -webkit-box-shadow: 0 10px 25px 0 #e0e0e0;
+          box-shadow: 0 10px 25px 0 #e0e0e0;
   background-color: #fafafa;
 }
 
@@ -79,3 +84,4 @@ h3 {
 }
 
 /* home btn */
+/*# sourceMappingURL=styles.css.map */
