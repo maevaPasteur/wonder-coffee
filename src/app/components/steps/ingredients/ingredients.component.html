@@ -1,4 +1,20 @@
-<h2>Voulez-vous ajoutez quelque 
+<p (click)="sendBackData.emit(
+  {
+            'step': 1,
+            'removed': {
+                'product_category': undefined,
+                'product_item': undefined,
+                'product_stock': undefined,
+                'product_price': undefined,
+                'intensity': undefined,
+                'size': undefined,
+                'ingredient': [],
+                'topping': [],
+                'price': undefined
+            }
+        }
+)" class="btn-border-blue restart">Recommencer</p>
+<h2>Voulez-vous ajoutez quelque
     chose dans votre café?</h2>
 <form class="flex">
     <div class="container-category" *ngFor="let item of category">
