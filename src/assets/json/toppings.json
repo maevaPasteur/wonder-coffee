@@ -4,15 +4,22 @@
     "toppings" : [
       {
         "id": "topping1",
-        "label": "Mousse de lait",
-        "price": 0.1,
+        "label": "Caramel",
+        "price": 0.40,
         "stock": 8,
         "quantity_adjust": false
       },
       {
         "id": "topping2",
+        "label": "Chocolat",
+        "price": 0.20,
+        "stock": 8,
+        "quantity_adjust": false
+      },
+      {
+        "id": "topping3",
         "label": "Chantilly",
-        "price": 0.1,
+        "price": 0.20,
         "stock": 8,
         "quantity_adjust": false
       }
@@ -22,30 +29,30 @@
     "label": "Garniture",
     "toppings" : [
       {
-        "id": "topping3",
-        "label": "Pépittes de chocolat",
-        "price": 0.1,
-        "stock": 8,
-        "quantity_adjust": false
-      },
-      {
         "id": "topping4",
-        "label": "Vermicelles arc en ciel",
-        "price": 0.1,
+        "label": "Noisettes",
+        "price": 0.40,
         "stock": 8,
         "quantity_adjust": false
       },
       {
         "id": "topping5",
-        "label": "Coco rappée",
-        "price": 0.1,
+        "label": "Meringues",
+        "price": 0.30,
         "stock": 8,
         "quantity_adjust": false
       },
       {
         "id": "topping6",
-        "label": "Merringues",
-        "price": 0.1,
+        "label": "Coco rappée",
+        "price": 0.30,
+        "stock": 2,
+        "quantity_adjust": false
+      },
+      {
+        "id": "topping7",
+        "label": "Caramel",
+        "price": 0.20,
         "stock": 8,
         "quantity_adjust": false
       }

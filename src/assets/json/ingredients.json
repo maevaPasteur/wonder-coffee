@@ -1,104 +1,118 @@
 [
   {
-    "label": "glace",
+    "label": "Glace",
     "ingredients": [
       {
         "id": "ingredient1",
-        "label": "glace pillée",
+        "label": "Glace pillée",
         "stock": 6,
-        "price": 0.2,
+        "price": 0.10,
         "quantity_adjust": true
       },
       {
         "id": "ingredient2",
-        "label": "glaçons",
+        "label": "Glaçons",
         "stock": 5,
-        "price": 0.2,
+        "price": 0.10,
         "quantity_adjust": true
       }
     ]
   },
   {
-    "label": "lait",
+    "label": "Lait",
     "ingredients": [
       {
         "id": "ingredient3",
-        "label": "Lait de vache",
+        "label": "Vache",
         "stock": 8,
-        "price": 0.2,
+        "price": 0.10,
         "quantity_adjust": true
       },
       {
         "id": "ingredient4",
-        "label": "Lait d'amandes",
+        "label": "Soja",
         "stock": 2,
-        "price": 0.2,
+        "price": 0.20,
         "quantity_adjust": true
       },
       {
         "id": "ingredient5",
-        "label": "Lait de soja",
+        "label": "Riz",
         "stock": 2,
-        "price": 0.2,
+        "price": 0.20,
         "quantity_adjust": true
-      }
-    ]
-  },
-  {
-    "label": "arrôme",
-    "ingredients": [
+      },
       {
         "id": "ingredient6",
-        "label": "Canelle",
-        "stock": 8,
-        "price": 0.1,
-        "quantity_adjust": true
-      },
-      {
-        "id": "ingredient7",
-        "label": "Vanille",
+        "label": "Amande",
         "stock": 2,
-        "price": 0.1,
-        "quantity_adjust": true
-      },
-      {
-        "id": "ingredient8",
-        "label": "Nutella",
-        "stock": 2,
-        "price": 0.2,
-        "quantity_adjust": true
-      },
-      {
-        "id": "ingredient8",
-        "label": "Coulis de caramel",
-        "stock": 6,
-        "price": 0.2,
-        "quantity_adjust": true
-      },
-      {
-        "id": "ingredient8",
-        "label": "Chocolat fondu",
-        "stock": 6,
-        "price": 0.2,
+        "price": 0.40,
         "quantity_adjust": true
       }
     ]
   },
   {
-    "label": "alcool",
+    "label": "Arôme",
     "ingredients": [
       {
-        "id": "ingredient9",
-        "label": "Whisky",
+        "id": "ingredient7",
+        "label": "Chocolat",
         "stock": 8,
-        "price": 0.5,
+        "price": 0.20,
         "quantity_adjust": true
       },
       {
-        "id": "ingredient7",
-        "label": "Grand Marnier",
+        "id": "ingredient8",
+        "label": "Noisette",
         "stock": 2,
-        "price": 0.5,
+        "price": 0.40,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient9",
+        "label": "Nutella",
+        "stock": 2,
+        "price": 0.30,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient10",
+        "label": "Canelle",
+        "stock": 6,
+        "price": 0.20,
+        "quantity_adjust": true
+      }
+    ]
+  },
+  {
+    "label": "Alcool",
+    "ingredients": [
+      {
+        "id": "ingredient11",
+        "label": "Whisky",
+        "stock": 8,
+        "price": 0.60,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient12",
+        "label": "Bourbon",
+        "stock": 2,
+        "price": 0.60,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient13",
+        "label": "Rhum",
+        "stock": 2,
+        "price": 0.80,
+        "quantity_adjust": true
+      },
+      {
+        "id": "ingredient14",
+        "label": "Liqueur",
+        "stock": 2,
+        "price": 0.50,
         "quantity_adjust": true
       }
     ]
