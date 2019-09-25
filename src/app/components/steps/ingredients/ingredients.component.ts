@@ -9,7 +9,6 @@ import {DataService} from '../../../services/data.service';
 export class IngredientsComponent implements OnInit {
 
     category: any;
-    ingredients = [];
 
     @Input() inputData: any;
     @Output() sendBackData = new EventEmitter();
@@ -24,10 +23,5 @@ export class IngredientsComponent implements OnInit {
             }
         );
     }
-
-    swithIngredient(item) {
-        console.log(item);
-    }
-
 
 }

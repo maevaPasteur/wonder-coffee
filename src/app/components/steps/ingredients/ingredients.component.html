@@ -3,9 +3,12 @@
   <div *ngFor="let item of category">
     <h3>{{ item.label }}</h3>
     <ul>
-      <li *ngFor="let ingredient of item.ingredients" (click)="swithIngredient(ingredient)">
-        {{ ingredient.label }}
+      <li *ngFor="let ingredient of item.ingredients">
+          <input id="{{ ingredient.id }}" type="checkbox" value="{{ ingredient.label }}"
+                 (click)="sendBackData.emit({'data':{'ingredient': ingredient.label}})">
+          <label for="{{ ingredient.id }}">{{ ingredient.label }}</label>
       </li>
     </ul>
   </div>
 </form>
+<button (click)="sendBackData.emit({'step': 6})">Valider</button>

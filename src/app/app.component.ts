@@ -33,7 +33,11 @@ export class AppComponent implements OnInit {
                     this.myCoffee.price += event.data.price;
                 } else {
                     if (this.myCoffee[key] && Array.isArray(this.myCoffee[key])) {
-                        this.myCoffee[key].push(event.data[key]);
+                        if (this.myCoffee[key].includes(event.data[key])) {
+                            this.removeA(this.myCoffee[key], event.data[key]);
+                        } else {
+                            this.myCoffee[key].push(event.data[key]);
+                        }
                     } else {
                         this.myCoffee[key] = event.data[key];
                     }
@@ -44,6 +48,20 @@ export class AppComponent implements OnInit {
         if (event.step) {
             this.step = event.step;
         }
+    }
+
+    removeA(arr) {
+        let what;
+        let a = arguments;
+        let L = a.length;
+        let ax;
+        while (L > 1 && arr.length) {
+            what = a[--L];
+            while ((ax = arr.indexOf(what)) !== -1) {
+                arr.splice(ax, 1);
+            }
+        }
+        return arr;
     }
 
     ngOnInit() {
