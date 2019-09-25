@@ -18,7 +18,6 @@ import {ToppingsComponent} from './components/steps/toppings/toppings.component'
 import {OrderComponent} from './components/steps/order/order.component';
 import { ReturnComponent } from './components/global/return/return.component';
 import { HomeBtnComponent } from './components/global/home-btn/home-btn.component';
-import { PayeBtnComponent } from './paye-btn/paye-btn.component';
 
 @NgModule({
     declarations: [
@@ -33,8 +32,7 @@ import { PayeBtnComponent } from './paye-btn/paye-btn.component';
         ToppingsComponent,
         OrderComponent,
         ReturnComponent,
-        HomeBtnComponent,
-        PayeBtnComponent
+        HomeBtnComponent
     ],
     imports: [
         BrowserModule,
