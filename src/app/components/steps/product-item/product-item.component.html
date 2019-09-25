@@ -21,17 +21,18 @@
                     (click)="sendBackData.emit({'data':{'product_item':item.label, 'product_stock':item.stock, 'product_price':item.price},'step':3})">
                 <p class="container-category">{{ item.label }}</p>
                 <h3>{{ item.description }}</h3>
-                <p class="price">{{ item.price  | number: "1.2" }}</p>
+                <p class="price">{{ item.price  | number: "1.2" }}‎€</p>
             </div>
             <div *ngIf="inputData.product_category != 'Café' && item.stock > 0"
                     (click)="sendBackData.emit({'data':{'product_item':item.label, 'product_stock':item.stock, 'product_price':item.price},'step':4})">
                 <p class="container-category">{{ item.label }}</p>
                 <h3>{{ item.description }}</h3>
-                <p class="price">{{ item.price  | number: "1.2" }}</p>
+                <p class="price">{{ item.price  | number: "1.2" }}‎€</p>
             </div>
             <div *ngIf="item.stock === 0" style="opacity:.5">
-                <p class="container-category">{{ item.price  | number: "1.2" }}</p>
-                <p>Indisponible pour le moment</p>
+                <p class="container-category">{{ item.label }}</p>
+                <h3>Indisponible pour le moment</h3>
+                <p class="price">{{ item.price  | number: "1.2" }}‎€</p>
             </div>
         </div>
 </div>
