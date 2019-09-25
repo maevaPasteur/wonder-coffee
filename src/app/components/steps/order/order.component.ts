@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
-  selector: 'app-order',
-  templateUrl: './order.component.html',
-  styleUrls: ['./order.component.sass']
+    selector: 'app-order',
+    templateUrl: './order.component.html',
+    styleUrls: ['./order.component.sass']
 })
 export class OrderComponent implements OnInit {
 
-  constructor() { }
+    @Input() inputData: any;
+    @Output() sendBackData = new EventEmitter();
 
-  ngOnInit() {
-  }
+    constructor() {}
+
+    ngOnInit() {
+    }
 
 }
