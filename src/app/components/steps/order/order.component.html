@@ -39,7 +39,7 @@
    
   </div>
 
-  <div>
+  <div *ngIf="options">
     <form>
       <div *ngIf="options.sugar > inputData.size">
         <h3>Du sucre ?</h3>
@@ -51,9 +51,9 @@
       <div *ngIf="options.stick > inputData.size">
         <h3>Une touillette ?</h3>
         <input type="radio" name="stick" id="stick-false" checked>
-        <label for="sugar-false">Non</label>
+        <label for="stick-false">Non</label>
         <input type="radio" name="stick" id="stick-true">
-        <label for="sugar-true">Oui</label>
+        <label for="stick-true">Oui</label>
       </div>
     </form>
 
