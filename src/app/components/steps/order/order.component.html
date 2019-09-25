@@ -1,3 +1,19 @@
+<p (click)="sendBackData.emit(
+  {
+            'step': 1,
+            'removed': {
+                'product_category': undefined,
+                'product_item': undefined,
+                'product_stock': undefined,
+                'product_price': undefined,
+                'intensity': undefined,
+                'size': undefined,
+                'ingredient': [],
+                'topping': [],
+                'price': undefined
+            }
+        }
+)" class="btn-border-blue restart">Recommencer</p>
 <h2>Commande finales</h2>
 <p>Categorie : {{ inputData.product_category }}</p>
 <p>Produit : {{ inputData.product_item }}</p>
@@ -36,5 +52,4 @@
         <label for="sugar-true">Oui</label>
     </div>
 </form>
-
 
