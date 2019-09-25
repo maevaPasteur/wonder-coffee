@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
                 } else {
                     if (this.myCoffee[key] && Array.isArray(this.myCoffee[key])) {
                         if (this.myCoffee[key].includes(event.data[key])) {
-                            this.removeA(this.myCoffee[key], event.data[key]);
+                            this.myCoffee[key] = this.removeFromArray(this.myCoffee[key], event.data[key]);
                         } else {
                             this.myCoffee[key].push(event.data[key]);
                         }
@@ -59,19 +59,16 @@ export class AppComponent implements OnInit {
      * @param a : value to remove
      * @return {any}
      */
-    removeA(arr) {
-        let what;
-        let a = arguments;
-        let L = a.length;
-        let ax;
-        while (L > 1 && arr.length) {
-            what = a[--L];
-            while ((ax = arr.indexOf(what)) !== -1) {
-                arr.splice(ax, 1);
+    removeFromArray(arr, a) {
+        const newArray = [];
+        arr.forEach( (value) => {
+            if (value !== a) {
+                newArray.push(value);
             }
-        }
-        return arr;
+        });
+        return newArray;
     }
+
 
     ngOnInit() {
         // console.log('init');
