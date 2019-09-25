@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {forEach} from '@angular/router/src/utils/collection';
+import {DataService} from './services/data.service';
 
 @Component({
     selector: 'app-root',
@@ -10,8 +10,11 @@ export class AppComponent implements OnInit {
 
     title = 'wonder-coffee';
     public step = 1;
+    ingredients;
+    toppings;
 
-    constructor() { }
+    constructor(private data: DataService) {
+    }
 
     public myCoffee = {
         product_category: undefined,
@@ -36,10 +39,17 @@ export class AppComponent implements OnInit {
                     this.myCoffee.price += event.data.price;
                 } else {
                     if (this.myCoffee[key] && Array.isArray(this.myCoffee[key])) {
+                        let activeItem = this.toppings.find(c => c.label === event.data[key]);
+                        if (!activeItem) {
+                            activeItem = this.ingredients.find(c => c.label === event.data[key]);
+                        }
+                        const itemPrice = activeItem.price * this.myCoffee.size;
                         if (this.myCoffee[key].includes(event.data[key])) {
                             this.myCoffee[key] = this.removeFromArray(this.myCoffee[key], event.data[key]);
+                            this.myCoffee.price -= itemPrice;
                         } else {
                             this.myCoffee[key].push(event.data[key]);
+                            this.myCoffee.price += itemPrice;
                         }
                     } else {
                         this.myCoffee[key] = event.data[key];
@@ -61,7 +71,7 @@ export class AppComponent implements OnInit {
      */
     removeFromArray(arr, a) {
         const newArray = [];
-        arr.forEach( (value) => {
+        arr.forEach((value) => {
             if (value !== a) {
                 newArray.push(value);
             }
@@ -71,14 +81,30 @@ export class AppComponent implements OnInit {
 
 
     ngOnInit() {
-        // console.log('init');
-        // console.log(this.myCoffee);
-        // for (let [key, value] of Object.entries(this.myCoffee)) {
-        //     console.log(value);
-        //     //console.log(value.isArray());
-        // }
-        // console.log('ooo');
-        // console.log(this.myCoffee['price']);
+        this.data.getToppings().subscribe(data => {
+                this.toppings = data;
+                const newTopping = [];
+                this.toppings.forEach((parent) => {
+                    parent.toppings.forEach((item) => {
+                        newTopping.push(item);
+                    });
+                });
+                this.toppings = newTopping;
+                console.log('new', newTopping);
+            }
+        );
+        this.data.getIngredients().subscribe(data => {
+                this.ingredients = data;
+                const newIngredients = [];
+                this.ingredients.forEach((parent) => {
+                    parent.ingredients.forEach((item) => {
+                        newIngredients.push(item);
+                    });
+                });
+                this.ingredients = newIngredients;
+                console.log('new', newIngredients);
+            }
+        );
     }
 
 }
