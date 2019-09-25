@@ -45,4 +45,4 @@
             (sendBackData)="editMyObject($event)"
     ></app-order>
 </section>
-<p *ngIf="myCoffee.price > 0">Prix : {{ myCoffee.price  | number: "1.2" }}‎€</p>
+<p class="price" *ngIf="myCoffee.price > 0">Prix : {{ myCoffee.price  | number: "1.2" }}‎€</p>

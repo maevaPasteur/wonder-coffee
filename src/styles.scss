@@ -12,6 +12,7 @@ body {
   width: 100vw;
   display: flex;
   align-items: center;
+  position: relative;
 
   app-root {
     width: 100%;
@@ -88,4 +89,21 @@ h3 {
     background-color: #37627c;
     color: #fff;
   }
+}
+
+.price {
+  position: fixed;
+  top: -100px;
+  right: -70px;
+  background: #b5cede;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-right: 40px;
 }
