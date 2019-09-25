@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {DataService} from '../../../services/data.service';
 
 @Component({
-  selector: 'app-return',
-  templateUrl: './return.component.html',
-  styleUrls: ['./return.component.scss']
+    selector: 'app-return',
+    templateUrl: './return.component.html',
+    styleUrls: ['./return.component.scss']
 })
 export class ReturnComponent implements OnInit {
 
-  constructor() { }
+    @Input() inputData: any;
+    @Output() sendBackData = new EventEmitter();
 
-  ngOnInit() {
-  }
+    constructor(private data: DataService) {
+    }
+
+    ngOnInit() {
+    }
 
 }

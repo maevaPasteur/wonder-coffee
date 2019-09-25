@@ -31,4 +31,8 @@ export class DataService {
     getToppings() {
         return this.http.get('../assets/json/toppings.json');
     }
+
+    getOptions() {
+        return this.http.get('../assets/json/options.json');
+    }
 }

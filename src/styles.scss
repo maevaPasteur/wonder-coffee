@@ -76,6 +76,11 @@ h3 {
   color: #37627c;
   padding: 8px 26px;
   text-decoration: none;
+
+  &:focus {
+    background-color: #37627c;
+    color: #fff;
+  }
 }
 
 /* home btn */

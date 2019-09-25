@@ -25,7 +25,8 @@ export class AppComponent implements OnInit {
         size: undefined,
         ingredient: [],
         topping: [],
-        price: 0
+        price: 0,
+        sugar: undefined
     };
 
     /**

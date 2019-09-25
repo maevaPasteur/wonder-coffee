@@ -83,5 +83,10 @@ h3 {
   text-decoration: none;
 }
 
+.btn-border-blue:focus {
+  background-color: #37627c;
+  color: #fff;
+}
+
 /* home btn */
 /*# sourceMappingURL=styles.css.map */
