@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+/* Typo */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+/* General settings */
+body {
+  font-family: 'Montserrat', serif;
+  background-image: url('../src/assets/img/bcg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrapper {
+  max-width: 788px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Heading */
+
+h2 {
+  font-family: Montserrat, serif;
+  font-size: 46px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: left;
+  color: #262626;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #262626;
+}
+
+.container-category {
+  width: 231px;
+  height: 325px;
+  border-radius: 23px;
+  box-shadow: 0 10px 25px 0 #e0e0e0;
+  background-color: #ffffff;
+}
+
+.btn-border-blue {
+  width: 185px;
+  height: 61px;
+  border-radius: 31px;
+  border: solid 3px #37627c;
+  background-color: #fafafa;
+}

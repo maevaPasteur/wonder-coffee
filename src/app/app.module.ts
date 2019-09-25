@@ -16,6 +16,8 @@ import {IntensityComponent} from './components/steps/intensity/intensity.compone
 import {IngredientsComponent} from './components/steps/ingredients/ingredients.component';
 import {ToppingsComponent} from './components/steps/toppings/toppings.component';
 import {OrderComponent} from './components/steps/order/order.component';
+import { ReturnComponent } from './components/global/return/return.component';
+import { HomeBtnComponent } from './components/global/home-btn/home-btn.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +30,9 @@ import {OrderComponent} from './components/steps/order/order.component';
         IntensityComponent,
         IngredientsComponent,
         ToppingsComponent,
-        OrderComponent
+        OrderComponent,
+        ReturnComponent,
+        HomeBtnComponent
     ],
     imports: [
         BrowserModule,

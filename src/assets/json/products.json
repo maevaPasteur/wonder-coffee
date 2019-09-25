@@ -4,6 +4,7 @@
       {
         "id" : "category1",
         "name" : "Café",
+        "img" : "../../src/assets/img/cafe.png",
         "products" : [
           {
             "id": "product1",
