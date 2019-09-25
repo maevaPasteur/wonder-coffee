@@ -1,4 +1,4 @@
-<h2>Choisis ton produit</h2>
+<h2>Que souhaitez-vous boire ?</h2>
 <div *ngFor="let item of product" class="container-category">
     <div *ngIf="inputData.product_category === 'Café' && item.stock > 0"
          (click)="sendBackData.emit({'data':{'product_item':item.label, 'product_stock':item.stock, 'product_price':item.price},'step':3})">

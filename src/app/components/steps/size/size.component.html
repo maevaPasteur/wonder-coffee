@@ -1,4 +1,4 @@
-<h2>Choisis la taille</h2>
+<h2>Choisissez la taille de votre boisson</h2>
 <div *ngFor="let item of sizes">
   <div *ngIf="inputData.product_stock >= item.content"
        (click)="sendBackData.emit({'data':{'size':item.content, 'price':(item.content * inputData.product_price)},'step':5})">

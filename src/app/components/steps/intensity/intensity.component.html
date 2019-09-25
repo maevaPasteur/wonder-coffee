@@ -1,4 +1,4 @@
-<h2>Choisis l'intencité</h2>
+<h2>Choisissez l'intencité de votre café</h2>
 <div *ngFor="let item of intensity">
   <div (click)="sendBackData.emit({'data':{'intensity':item.intensity},'step':4})">
     <p>{{ item.label }}</p>

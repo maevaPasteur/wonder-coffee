@@ -1,9 +1,9 @@
-<h2>Commande finales</h2>
+<h2>Votre séléction</h2>
 <p>Categorie : {{ inputData.product_category }}</p>
 <p>Produit : {{ inputData.product_item }}</p>
 <p>Taille : {{ inputData.size }}</p>
 <div *ngIf="inputData.ingredient !== []">
-    <p>Ingrédient</p>
+    <p>Ingrédients</p>
     <ul>
         <li *ngFor="let ingredient of inputData.ingredient">
             {{ ingredient }}
