@@ -20,13 +20,13 @@
          (click)="sendBackData.emit({'data':{'product_item':item.label, 'product_stock':item.stock, 'product_price':item.price},'step':3})">
         <p>{{ item.label }}</p>
         <p>{{ item.description }}</p>
-        <p>{{ item.price }}</p>
+        <p>{{ item.price  | number: "1.2" }}</p>
     </div>
     <div *ngIf="inputData.product_category != 'Café' && item.stock > 0"
          (click)="sendBackData.emit({'data':{'product_item':item.label, 'product_stock':item.stock, 'product_price':item.price},'step':4})">
         <p>{{ item.label }}</p>
         <p>{{ item.description }}</p>
-        <p>{{ item.price }}</p>
+        <p>{{ item.price  | number: "1.2" }}</p>
     </div>
     <div *ngIf="item.stock === 0" style="opacity:.5">
         <p>{{ item.label }}</p>

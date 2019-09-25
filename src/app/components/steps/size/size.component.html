@@ -19,6 +19,7 @@
   <div *ngIf="inputData.product_stock >= item.content"
        (click)="sendBackData.emit({'data':{'size':item.content, 'price':(item.content * inputData.product_price)},'step':5})">
     <p>{{ item.label }}</p>
+    <p>{{ (item.content * inputData.product_price)  | number: "1.2" }}‎€</p>
   </div>
   <div *ngIf="inputData.product_stock < item.content" style="opacity:.5">
     <p>{{ item.label }}</p>

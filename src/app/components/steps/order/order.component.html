@@ -34,7 +34,7 @@
         </li>
     </ul>
 </div>
-<p>{{ inputData.price }} euros</p>
+<p>{{ inputData.price  | number: "1.2" }} euros</p>
 
 <form>
     <div *ngIf="options.sugar > inputData.size">
