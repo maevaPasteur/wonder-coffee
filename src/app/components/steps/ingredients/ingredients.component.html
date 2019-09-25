@@ -7,7 +7,7 @@
                 <input id="{{ ingredient.id }}" type="checkbox" value="{{ ingredient.label }}"
                        (click)="sendBackData.emit({'data':{'ingredient': ingredient.label}})">
                 <label for="{{ ingredient.id }}">{{ ingredient.label }}</label>
-                <p>{{ ingredient.price * inputData.size }} e</p>
+                <p>{{ (ingredient.price * inputData.size)  | number: "1.2" }} e</p>
             </li>
         </ul>
     </div>
