@@ -1,5 +1,7 @@
+
 <app-return></app-return>
 <h2> Quel grain souhaitez-vous ?</h2>
+
 <div class="flex">
     <div *ngFor="let item of category">
         <div (click)="sendBackData.emit(
@@ -15,4 +17,5 @@
         <h3>{{ item.name }}</h3>
     </div>
 </div>
-<app-home-btn></app-home-btn>
+
+

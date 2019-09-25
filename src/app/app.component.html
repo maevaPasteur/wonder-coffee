@@ -1,6 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-header></app-header>
-<h1>App</h1>
+<app-return
+        [inputData]="myCoffee"
+        (sendBackData)="editMyObject($event)"
+></app-return>
 <section *ngIf="step === 0">
     <app-home></app-home>
 </section>

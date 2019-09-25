@@ -44,3 +44,19 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+src/app/components/steps/intensity/intensity.component.html/
+src/app/app.component.html/
+src/app/components/global/home/home.component.html/
+src/app/components/global/return/return.component.html/
+src/app/components/global/return/return.component.scss/
+src/app/components/global/return/return.component.ts/
+src/app/components/steps/intensity/intensity.component.html/
+src/app/components/steps/product-category/product-category.component.ts/
+src/app/components/steps/product-item/product-item.component.html/
+src/assets/json/products.json/
+src/styles.scss/
+
+
+
+
