@@ -16,14 +16,14 @@
 )" class="btn-border-blue restart">Recommencer</p>
 <h2>Chosissez les nappages</h2>
 <form>
-  <div *ngFor="let item of category">
+  <div class="container-category" *ngFor="let item of category">
     <h3>{{ item.label }}</h3>
     <ul>
       <li *ngFor="let topping of item.toppings">
         <input id="{{ topping.id }}" type="checkbox" value="{{ topping.label }}"
                (click)="sendBackData.emit({'data':{'topping': topping.label}})">
         <label for="{{ topping.id }}">{{ topping.label }}</label>
-        <p>{{ topping.price }}</p>
+        <p>+{{ topping.price }}€</p>
       </li>
     </ul>
   </div>

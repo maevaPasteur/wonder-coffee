@@ -15,7 +15,6 @@ import {IntensityComponent} from './components/steps/intensity/intensity.compone
 import {IngredientsComponent} from './components/steps/ingredients/ingredients.component';
 import {ToppingsComponent} from './components/steps/toppings/toppings.component';
 import {OrderComponent} from './components/steps/order/order.component';
-import { PayeBtnComponent } from './paye-btn/paye-btn.component';
 
 @NgModule({
     declarations: [
@@ -27,8 +26,7 @@ import { PayeBtnComponent } from './paye-btn/paye-btn.component';
         IntensityComponent,
         IngredientsComponent,
         ToppingsComponent,
-        OrderComponent,
-        PayeBtnComponent
+        OrderComponent
     ],
     imports: [
         BrowserModule,

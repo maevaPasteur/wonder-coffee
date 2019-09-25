@@ -2,16 +2,19 @@
   {
     "id": "intensity1",
     "label": "Serré",
+    "img": "assets/img/serre.png",
     "intensity": 1
   },
   {
     "id": "intensity2",
     "label": "Normal",
+    "img": "assets/img/normal.png",
     "intensity": 2
   },
   {
     "id": "intensity3",
     "label": "Allongé",
+    "img": "assets/img/allonge.png",
     "intensity": 3
   }
 ]

@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 /* Typo */
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 /* General settings */
 body {
   font-family: 'Montserrat', serif;
-  background-image: url('../src/assets/img/bcg.png');
+  background-image: url("../src/assets/img/bcg.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -18,13 +17,18 @@ body {
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* Heading */
-
 h2 {
   font-family: Montserrat, serif;
   font-size: 46px;
@@ -53,12 +57,13 @@ h3 {
   width: 231px;
   height: 325px;
   border-radius: 23px;
-  box-shadow: 0 10px 25px 0 #e0e0e0;
+  -webkit-box-shadow: 0 10px 25px 0 #e0e0e0;
+          box-shadow: 0 10px 25px 0 #e0e0e0;
   background-color: #fafafa;
+}
 
-  & img {
-    height: 180px;
-  }
+.container-category img {
+  height: 180px;
 }
 
 /* button */
@@ -80,9 +85,10 @@ h3 {
   color: #37627c;
   padding: 8px 26px;
   text-decoration: none;
-
-  &:focus {
-    background-color: #37627c;
-    color: #fff;
-  }
 }
+
+.btn-border-blue:focus {
+  background-color: #37627c;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */
