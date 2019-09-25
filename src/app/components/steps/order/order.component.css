@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=order.component.css.map */
+.flex {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex img {
+  position: absolute;
+  left: 20px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  z-index: -1;
+}
+
+.flex p {
+  z-index: 1;
+}
+/*# sourceMappingURL=order.component.css.map */

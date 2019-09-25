@@ -1,8 +1,8 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,eAAe,EAAE,YAAY;CAe9B;;AAhBD,AAGE,KAHG,CAGH,GAAG,CAAC;EACF,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,IAAI;EACV,SAAS,EAAE,UAAU;EACrB,OAAO,EAAE,EAAE;CACZ;;AARH,AAUE,KAVG,CAUH,CAAC,CAAC;EACA,OAAO,EAAE,CAAC;CACX",
     "sources": [
-        "order.component.sass"
+        "order.component.scss"
     ],
     "names": [],
     "file": "order.component.css"

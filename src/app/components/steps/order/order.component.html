@@ -15,42 +15,52 @@
         }
 )" class="btn-border-blue restart">Recommencer</p>
 <h2>Votre sélection</h2>
-<p>Categorie : {{ inputData.product_category }}</p>
-<p>Produit : {{ inputData.product_item }}</p>
-<p>Taille : {{ inputData.size }}</p>
-<div *ngIf="inputData.ingredient !== []">
-    <p>Ingrédients</p>
-    <ul>
-        <li *ngFor="let ingredient of inputData.ingredient">
+<div class="flex">
+  <div>
+    <img src="assets/img/cafe.png" alt="">
+    <div>
+      <p>Categorie : {{ inputData.product_category }}</p>
+      <p>Produit : {{ inputData.product_item }}</p>
+      <p>Taille : {{ inputData.size }}</p>
+      <div *ngIf="inputData.ingredient !== []">
+        <p>Ingrédients</p>
+        <ul>
+          <li *ngFor="let ingredient of inputData.ingredient">
             {{ ingredient }}
-        </li>
-    </ul>
-</div>
-<div *ngIf="inputData.topping !== []">
-    <p>Nappages</p>
-    <ul>
-        <li *ngFor="let topping of inputData.topping">
+          </li>
+        </ul>
+      </div>
+      <div *ngIf="inputData.topping !== []">
+        <p>Nappages</p>
+        <ul>
+          <li *ngFor="let topping of inputData.topping">
             {{ topping }}
-        </li>
-    </ul>
-</div>
-<p>{{ inputData.price }} euros</p>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-<form>
-    <div *ngIf="options.sugar > inputData.size">
+  </div>
+  <div>
+
+    <form>
+      <div *ngIf="options.sugar > inputData.size">
         <h3>Du sucre ?</h3>
         <input type="radio" name="sugar" id="sugar-false" checked>
         <label for="sugar-false">Non</label>
         <input type="radio" name="sugar" id="sugar-true">
         <label for="sugar-true">Oui</label>
-    </div>
-    <div *ngIf="options.stick > inputData.size">
+      </div>
+      <div *ngIf="options.stick > inputData.size">
         <h3>Une touillette ?</h3>
         <input type="radio" name="stick" id="stick-false" checked>
         <label for="sugar-false">Non</label>
         <input type="radio" name="stick" id="stick-true">
         <label for="sugar-true">Oui</label>
-    </div>
-</form>
+      </div>
+    </form>
 
+    <p>{{ inputData.price }} euros</p>
 
+  </div>
+</div>
