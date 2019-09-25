@@ -62,4 +62,9 @@ button {
   font-weight: 600;
   margin-top: 50px;
 }
+
+input:checked + label {
+  background-color: #37627c;
+  color: #fafafa;
+}
 /*# sourceMappingURL=order.component.css.map */

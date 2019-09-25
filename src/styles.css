@@ -15,6 +15,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 body app-root {
@@ -81,7 +82,7 @@ h3 {
 /* return btn */
 .btn-border-blue {
   height: 61px;
-  border-radius: 31px;
+  border-radius: 40px;
   border: solid 3px #37627c;
   background-color: #FFFFFF;
   font-family: Montserrat, sans-serif;
@@ -97,5 +98,34 @@ h3 {
 .btn-border-blue:focus {
   background-color: #37627c;
   color: #fff;
+}
+
+.price {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #37627c;
+}
+
+.price-btn {
+  position: fixed;
+  top: -100px;
+  right: -70px;
+  background: #b5cede;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-right: 40px;
 }
 /*# sourceMappingURL=styles.css.map */
