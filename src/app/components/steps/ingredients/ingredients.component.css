@@ -22,7 +22,7 @@
 
 .flex div {
   width: 45%;
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .flex div ul {
@@ -109,9 +109,7 @@ button {
   border-radius: 40px;
   padding: 25px 0;
   letter-spacing: 0.1em;
-  position: fixed;
-  right: 118px;
-  bottom: 150px;
-  margin-top: 60px;
+  display: block;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=ingredients.component.css.map */
