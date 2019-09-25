@@ -1,15 +1,16 @@
-<h2>Chosis tes ingrédients</h2>
-<form>
-    <div *ngFor="let item of category">
+<h2>Voulez-vous ajoutez quelque 
+    chose dans votre café?</h2>
+<form class="flex">
+    <div class="container-category" *ngFor="let item of category">
         <h3>{{ item.label }}</h3>
         <ul>
             <li *ngFor="let ingredient of item.ingredients">
                 <input id="{{ ingredient.id }}" type="checkbox" value="{{ ingredient.label }}"
                        (click)="sendBackData.emit({'data':{'ingredient': ingredient.label}})">
                 <label for="{{ ingredient.id }}">{{ ingredient.label }}</label>
-                <p>{{ (ingredient.price * inputData.size)  | number: "1.2" }} e</p>
+                <p>+{{ (ingredient.price * inputData.size)  | number: "1.2" }}€</p>
             </li>
         </ul>
     </div>
 </form>
-<button (click)="sendBackData.emit({'step': 6})">Valider</button>
+<button (click)="sendBackData.emit({'step': 6})">Passer et payer</button>
