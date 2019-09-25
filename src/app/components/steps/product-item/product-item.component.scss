@@ -3,7 +3,7 @@
 .flex {
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: flex-start;
 
   & div {
     flex-basis: 40%;

@@ -43,21 +43,21 @@
     <form>
       <div *ngIf="options.sugar > inputData.size">
         <h3>Du sucre ?</h3>
-        <input type="radio" name="sugar" id="sugar-false" checked>
-        <label for="sugar-false">Non</label>
-        <input type="radio" name="sugar" id="sugar-true">
-        <label for="sugar-true">Oui</label>
+        <input type="radio" [name]="'sugar'" [id]="'sugar-false'" [checked]>
+        <label [for]="'sugar-false'">Non</label>
+        <input type="radio" [name]="'sugar'" [id]="'sugar-true'">
+        <label [for]="'sugar-true'">Oui</label>
       </div>
       <div *ngIf="options.stick > inputData.size">
         <h3>Une touillette ?</h3>
-        <input type="radio" name="stick" id="stick-false" checked>
-        <label for="stick-false">Non</label>
-        <input type="radio" name="stick" id="stick-true">
-        <label for="stick-true">Oui</label>
+        <input type="radio" [name]="'stick'" [id]="'stick-false'" [checked]>
+        <label [for]="'stick-false'">Non</label>
+        <input type="radio" [name]="'stick'" [id]="'stick-true'">
+        <label [for]="'stick-true'">Oui</label>
       </div>
     </form>
 
-    <p class="total-price">Prix total : {{ inputData.price }} euros</p>
+    <p class="total-price">Prix total : {{ inputData.price  | number: "1.2" }}‎€</p>
   </div>
 
 </div>
