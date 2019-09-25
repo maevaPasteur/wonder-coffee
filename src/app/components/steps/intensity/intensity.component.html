@@ -14,7 +14,7 @@
             }
         }
 )" class="btn-border-blue restart">Recommencer</p>
-<h2>Choisissez l'intencité de votre café</h2>
+<h2>Choisissez l'intensité de votre café</h2>
 <div class="flex">
     <div *ngFor="let item of intensity">
       <div (click)="sendBackData.emit({'data':{'intensity':item.intensity},'step':4})"
