@@ -1,83 +1,80 @@
 form {
-    font-family: Montserrat, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  
-    h3 {
-      text-transform: uppercase;
-      color: #A2BDCE;
-      padding: 15px 0 0 15px;
-      margin: 0;
-      font-size: 45px;
-    }
-  
-    div {
-      width: 45%;
-      height: 527px;
-      margin-top: 50px;
-  
-      ul {
-  
-        padding: 0;
-        margin-top: 40px;
-  
-        li {
-          list-style: none;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  h3 {
+    text-transform: uppercase;
+    color: #A2BDCE;
+    padding: 15px 0 0 15px;
+    margin: 0;
+    font-size: 45px;
+  }
+
+  div {
+    width: 45%;
+    height: 527px;
+    margin-top: 50px;
+
+    ul {
+
+      padding: 0;
+      margin-top: 40px;
+
+      li {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+
+        input {
+          display: none;
+        }
+
+        input:checked + label {
+          background-color: #37627c;
+          color: #fafafa;
+        }
+
+        label {
+          display: inline-block;
+          border: solid 3px #37627c;
+          background-color: #fafafa;
           text-align: center;
-          display: flex;
-          justify-content: space-evenly;
-          margin-bottom: 30px;
-  
-          input {
-            display: none;
-          }
-  
-          input:checked+label {
-              background-color: #37627c;
-              color: #fafafa;
-          }
-  
-          label {
-            display: inline-block;
-            border: solid 3px #37627c;
-            background-color: #fafafa;
-            text-align: center;
-            color: #37627c;
-            border-radius: 31px;
-            font-size: 24px;
-            padding: 10px 0;
-            font-weight: 600;
-            width: 190px;
-          }
-  
-          p {
-            font-size: 22px;
-            font-weight: 600;
-            color: #37627c;
-            margin: 0.5em 0 1em 0;
-          }
+          color: #37627c;
+          border-radius: 31px;
+          font-size: 24px;
+          padding: 10px 0;
+          font-weight: 600;
+          width: 190px;
+        }
+
+        p {
+          font-size: 22px;
+          font-weight: 600;
+          color: #37627c;
+          margin: 0.5em 0 1em 0;
         }
       }
     }
   }
-  
-    
-  button {
-      font-family: Montserrat, sans-serif;
-      background-color: #37627c;
-      color: #fafafa;
-      font-size: 28px;
-      font-weight: 600;
-      border: none;
-      width: 450px;
-      border-radius: 40px;
-      padding: 25px 0;
-      letter-spacing: 0.1em;
-      position: fixed;
-      right: 118px;
-      bottom:150px;
-      margin-top: 60px;
-  }
+}
+
+button {
+  font-family: Montserrat, sans-serif;
+  background-color: #37627c;
+  color: #fafafa;
+  font-size: 28px;
+  font-weight: 600;
+  border: none;
+  width: 450px;
+  border-radius: 40px;
+  padding: 25px 0;
+  letter-spacing: 0.1em;
+  display: block;
+  margin: 0 auto;
+}
   

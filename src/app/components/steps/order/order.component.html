@@ -35,6 +35,7 @@
         <ul>
           <li *ngFor="let topping of inputData.topping">
             {{ topping }}
+<<<<<<< HEAD
           </li>
         </ul>
       </div>
@@ -42,6 +43,12 @@
 
   </div>
   <div>
+=======
+        </li>
+    </ul>
+</div>
+<p>{{ inputData.price  | number: "1.2" }} euros</p>
+>>>>>>> 2c560010e14bbfea10503e8687651a27018e621b
 
     <form>
       <div *ngIf="options.sugar > inputData.size">

@@ -8,8 +8,15 @@ body {
   background-image: url('../src/assets/img/bcg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
+  display: flex;
+  align-items: center;
+
+  app-root {
+    width: 100%;
+    padding-bottom: 50px;
+  }
 }
 
 .wrapper {
@@ -64,21 +71,17 @@ h3 {
 /* button */
 /* return btn */
 .btn-border-blue {
-  width: 185px;
   height: 61px;
   border-radius: 31px;  
   border: solid 3px #37627c;
   background-color: #FFFFFF;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 28px;
   font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.21;
-  letter-spacing: normal;
-  text-align: left;
+  line-height: 61px;
   color: #37627c;
   padding: 8px 26px;
+  display: inline-block;
   text-decoration: none;
 
   &:focus {
