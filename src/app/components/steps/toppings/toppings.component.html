@@ -7,6 +7,7 @@
         <input id="{{ topping.id }}" type="checkbox" value="{{ topping.label }}"
                (click)="sendBackData.emit({'data':{'topping': topping.label}})">
         <label for="{{ topping.id }}">{{ topping.label }}</label>
+        <p>{{ topping.price }}</p>
       </li>
     </ul>
   </div>
