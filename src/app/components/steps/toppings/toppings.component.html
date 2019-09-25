@@ -1,4 +1,20 @@
-<h2>Encore une petite gourmandise?</h2>
+<p (click)="sendBackData.emit(
+  {
+            'step': 1,
+            'removed': {
+                'product_category': undefined,
+                'product_item': undefined,
+                'product_stock': undefined,
+                'product_price': undefined,
+                'intensity': undefined,
+                'size': undefined,
+                'ingredient': [],
+                'topping': [],
+                'price': undefined
+            }
+        }
+)" class="btn-border-blue restart">Recommencer</p>
+<h2>Chosissez les nappages</h2>
 <form>
   <div class="container-category" *ngFor="let item of category">
     <h3>{{ item.label }}</h3>
@@ -12,4 +28,4 @@
     </ul>
   </div>
 </form>
-<button (click)="sendBackData.emit({'step': 7})">Valider
+<button (click)="sendBackData.emit({'step': 7})">Valider</button>

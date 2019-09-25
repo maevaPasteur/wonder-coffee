@@ -1,4 +1,20 @@
-<h2>Choisis ton produit</h2>
+<p (click)="sendBackData.emit(
+  {
+            'step': 1,
+            'removed': {
+                'product_category': undefined,
+                'product_item': undefined,
+                'product_stock': undefined,
+                'product_price': undefined,
+                'intensity': undefined,
+                'size': undefined,
+                'ingredient': [],
+                'topping': [],
+                'price': undefined
+            }
+        }
+)" class="btn-border-blue restart">Recommencer</p>
+<h2>Que souhaitez-vous boire ?</h2>
 <div *ngFor="let item of product" class="container-category">
     <div *ngIf="inputData.product_category === 'Café' && item.stock > 0"
          (click)="sendBackData.emit({'data':{'product_item':item.label, 'product_stock':item.stock, 'product_price':item.price},'step':3})">
@@ -14,7 +30,7 @@
     </div>
     <div *ngIf="item.stock === 0" style="opacity:.5">
         <p>{{ item.label }}</p>
-        <p>Indisponible pour le  moment</p>
+        <p>Indisponible pour le moment</p>
     </div>
 </div>
 <app-home-btn></app-home-btn>
