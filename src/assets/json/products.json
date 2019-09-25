@@ -8,12 +8,14 @@
           {
             "id": "product1",
             "label": "Café pur Arabica",
+            "description": "Café noir au gout intense",
             "price": 1,
             "stock": 2
           },
           {
             "id": "product2",
-            "label": "Café Robusta, notes gourmandes de noix et d'amandes",
+            "label": "Café Robusta",
+            "description": "notes gourmandes de noix et d'amandes",
             "price": 1.2,
             "stock" : 4
           }
@@ -26,12 +28,14 @@
           {
             "id": "product3",
             "label": "Thé au citron",
+            "description": "",
             "price": 0.8,
             "stock" : 0
           },
           {
             "id": "product4",
             "label": "Thé nature BIO",
+            "description": "",
             "price": 0.5,
             "stock" : 8
           }
@@ -44,12 +48,14 @@
           {
             "id": "product5",
             "label": "Chaucolat chaud Milka",
+            "description": "",
             "price": 1.2,
             "stock" : 7
           },
           {
             "id": "product6",
             "label": "Chaucolat chaud Nestlé",
+            "description": "",
             "price": 1,
             "stock" : 0
           }
