@@ -2,8 +2,6 @@
   justify-content: space-around;
 
   img {
-    position: absolute;
-    left: 20px;
     transform: scale(0.8);
     z-index: -1;
   }
@@ -12,5 +10,54 @@
     z-index: 1;
   }
 
+  .container-category {
+    font-size: 28px;
+    font-weight: 500;
+    width: inherit;
+    height: inherit;
+    padding: 10px 70px;
+    border-radius: 23px;
+    box-shadow: 0 10px 25px 0 #e0e0e0;
+    background-color: #fafafa;
+  }
 
+
+  form div input {
+    display: none;
+  }
+
+  form div label {
+    display: inline-block;
+    border: solid 3px #37627c;
+    background-color: #fafafa;
+    text-align: center;
+    color: #37627c;
+    border-radius: 31px;
+    font-size: 24px;
+    padding: 10px 30px;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+
+}
+
+button {
+  font-family: Montserrat, sans-serif;
+  background-color: #37627c;
+  color: #fafafa;
+  font-size: 28px;
+  font-weight: 600;
+  border: none;
+  width: 450px;
+  border-radius: 40px;
+  padding: 25px 0;
+  letter-spacing: 0.1em;
+  display: block;
+  margin: 80px auto 0 auto;
+}
+
+.total-price {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 50px;
 }

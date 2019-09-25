@@ -16,40 +16,31 @@
 )" class="btn-border-blue restart">Recommencer</p>
 <h2>Votre sélection</h2>
 <div class="flex">
-  <div>
-    <img src="assets/img/cafe.png" alt="">
-    <div>
-      <p>Categorie : {{ inputData.product_category }}</p>
-      <p>Produit : {{ inputData.product_item }}</p>
-      <p>Taille : {{ inputData.size }}</p>
-      <div *ngIf="inputData.ingredient !== []">
-        <p>Ingrédients</p>
-        <ul>
-          <li *ngFor="let ingredient of inputData.ingredient">
-            {{ ingredient }}
-          </li>
-        </ul>
-      </div>
-      <div *ngIf="inputData.topping !== []">
-        <p>Nappages</p>
-        <ul>
-          <li *ngFor="let topping of inputData.topping">
-            {{ topping }}
-<<<<<<< HEAD
-          </li>
-        </ul>
-      </div>
-    </div>
-
+  <div class="container-category ">
+        <p>Categorie : {{ inputData.product_category }}</p>
+        <p>Produit : {{ inputData.product_item }}</p>
+        <p>Taille : {{ inputData.size }}</p>
+        <div *ngIf="inputData.ingredient !== []">
+          <p>Ingrédients</p>
+          <ul>
+            <li *ngFor="let ingredient of inputData.ingredient">
+              {{ ingredient }}
+            </li>
+          </ul>
+        </div>
+        <div *ngIf="inputData.topping !== []">
+          <p>Nappages</p>
+          <ul>
+            <li *ngFor="let topping of inputData.topping">
+              {{ topping }}
+            </li>
+          </ul>
+        </div>
+        <p>{{ inputData.price  | number: "1.2" }} euros</p>
+   
   </div>
-  <div>
-=======
-        </li>
-    </ul>
-</div>
-<p>{{ inputData.price  | number: "1.2" }} euros</p>
->>>>>>> 2c560010e14bbfea10503e8687651a27018e621b
 
+  <div>
     <form>
       <div *ngIf="options.sugar > inputData.size">
         <h3>Du sucre ?</h3>
@@ -67,7 +58,10 @@
       </div>
     </form>
 
-    <p>{{ inputData.price }} euros</p>
-
+    <p class="total-price">Prix total : {{ inputData.price }} euros</p>
   </div>
+
 </div>
+
+<button>Valider</button>
+
